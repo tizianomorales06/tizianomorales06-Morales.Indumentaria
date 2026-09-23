@@ -1,0 +1,246 @@
+/*selector(etiqueta,class,id){
+    propiedad: valor;
+}*/
+/*--TIPOGRAFIAS--*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*  font-family: "Oswald", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
+/*font-family: "Meie Script", cursive;*/
+
+/*hola profe, antes que este entregable hice el de sass y animation asi k voy a tener que comentar algo asi cumplo con los 3 commit q pide ticher*/
+
+
+/*--BODY--*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#F1F7ED;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*--HEADER--*/
+.envios-header{ /*arreglo envios*/
+    display: flex;
+    justify-content: flex-start;
+    gap: 600px;
+}
+.subtitulo-envio{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding: 30px;
+    margin: 0;
+    
+}
+.link-envio{
+    border: none;
+    text-decoration: underline;
+    gap: 0;
+}
+.aparte{    /*arreglo contactanos,indumentaria y about us*/
+    display: flex;
+    justify-content: flex-start;
+    gap: 600px;
+}
+h1{
+   font-family:"Meie Script", cursive;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    height: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin: 25px;
+    padding: 0;
+    gap: 20px;
+}
+/*li{
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    
+}
+li:hover{
+    background-color: grey;
+    color: #fff;
+}*/
+nav a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 10px;
+    display: block;
+}
+/*--MAIN--*/
+.somos{
+    height: 100px;
+    font-size: 35px;
+}
+.carousel-inner.active{
+    /*width: 100%;*/
+    height: 50px;
+}
+
+
+.grupo-fondo{
+    background-image: url(../assets/LOGO/equipo\ logo.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    height: 500px;
+    
+
+    /*display: flex;
+    align-items: flex-start;
+    padding: 50px;*/
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "nav"   "title"
+     "us"    "foto"
+      "footer" "footer";
+}
+.grupo-fondo:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.container{
+    background-image: url("../assets/LOGO/logo.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr,1fr;
+    grid-template-areas: 
+    "title" "img";
+}
+section{
+    padding: 20px;
+}
+/*--FOOTER--*/
+.instagram{
+    position: fixed;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+}
+.facebook{
+    position: fixed;
+    height: 60px;
+    bottom: 10px;
+    right: 120px;
+}
+.twitter{
+    position: fixed;
+    height: 70px;
+    bottom: 10px;
+    right: 230px;
+}
+.copyright{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+}
+@media (max-width: 500px) { /*RESPONSIVE*/
+    body {
+        font-size: 12px;
+        padding: 10px;
+        margin: 5px;
+
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    header{
+        display: inline;
+        border: none;
+
+
+    }
+    nav a{
+        padding: 3px 3px;
+
+
+    }
+    .somos{
+        font-size: 25px;
+        
+    }
+    .logo-fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center right;
+        gap: 20px;
+
+    }
+    .instagram{
+    position: fixed;
+    height: 30px;
+    bottom: 10px;
+    right: 10px;
+    }
+    .facebook{
+    position: fixed;
+    height: 30px;
+    bottom: 10px;
+    right: 50px;
+    }
+    .twitter{
+    position: fixed;
+    height: 35px;
+    bottom: 10px;
+    right: 85px;
+    
+    }
+    .aparte{
+    gap: 50px;
+    }
+    .envios-header{
+    gap: 50px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center right;
+        gap: 20px;
+        background-image: none;
+    }
+    .grupo-fondo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "texto";
+    background-image: none;
+    
+    }
+}
+@media((min-widht: 501px) and (max-widht:1024px)){
+    body{
+        font-size: 1000px;
+    }
+
+}
+
+
