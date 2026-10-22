@@ -1,2 +1,2 @@
-https://vercel.com/tizianomorales0608-8804/tizianomorales06-morales-indumentaria-final/CY7YhTgb4LHEecNmnS5XyiuhJA6n
-https://tizianomorales06-morales-indumentar.vercel.app/
+https://vercel.com/tizianomorales0608-8804/morales-indumentaria/ATg4ACctqgXWWoBKHATdxfoJZjoY
+https://morales-indumentaria.vercel.app/
