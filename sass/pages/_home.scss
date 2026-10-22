@@ -1,7 +1,6 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixin" as m;
 section{
-    padding: 20px;
     .somos{
          height: 100px;
          font-size: 35px;
@@ -11,10 +10,11 @@ section{
          @include m.mobile{
             font-size: 25px;
          }
+      } 
     }
     
     .container{
-        background-image: url(../assets/logo.png);
+        background-image: url(../assets/LOGO/logo.png);
         background-repeat: no-repeat;
         background-position: center right;
         background-size: contain;
@@ -33,11 +33,30 @@ section{
         padding: 20px;
         }
        @include m.mobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center right;
-        gap: 20px;
+        @include m.flex(column, nowrap, flex-start, flex-start, 20px);
+        height: auto;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        background-image: none;
      }
     }
-}
+    .elegirnos{
+        padding: 20px 50px;
+        @include m.tablet{
+            padding: 20px;
+        }
+        @include m.mobile{
+            padding: 10px;
+            text-align: center;
+            h3{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .logo{
+        height: 200px;
+        @include m.mobile{
+            height: 120px;
+        }
+    }

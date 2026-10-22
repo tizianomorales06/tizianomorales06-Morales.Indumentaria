@@ -4,9 +4,7 @@
 
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include m.flex(row, nowrap, space-between, center, 0);
     border: 1px solid;
     @include m.mobile{
         display:inline;

@@ -5,9 +5,7 @@ nav{
     background-color: v.$bg-color;
     ul{
         list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include m.flex(row, nowrap, space-between, center, 0);
         border: 1px solid;
         a{
             text-decoration:none;

@@ -1,16 +1,21 @@
 @use "./utilities/reset";
 @use "./utilities/animation";
 
+@use "./base/base";
+@use "./base/tipografia";
+
 @use "./layout/header";
 @use "./layout/nav";
 @use "./layout/footer";
+
+@use "./components/cards";
+@use "./components/button";
+@use "./components/tablas";
+@use "./components/acordeon";
+@use "./components/formulario";
 
 @use "./pages/home";
 @use "./pages/indumentaria";
 @use "./pages/contacto";
 @use "./pages/envios";
 @use "./pages/nosotros";
-
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/bootstrap/scss/navbar.scss";

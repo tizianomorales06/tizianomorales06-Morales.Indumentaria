@@ -1,0 +1,12 @@
+@use "../utilities/variables" as v;
+
+.form-control{
+    background-color: v.$bg-color;
+    border: 1px solid #000000;
+    border-radius: 0;
+    &:focus{
+        background-color: v.$bg-color;
+        border-color: #000000;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,15 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+main{
+    h2{
+        font-size: 2rem;
+        text-transform: uppercase;
+        @include m.tablet{
+            font-size: 1.6rem;
+        }
+        @include m.mobile{
+            font-size: 1.3rem;
+        }
+    }
+}
